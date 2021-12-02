@@ -6,8 +6,8 @@
 并解析出地址并在浏览器新建标签中打开，推荐使用firefox。</br>
 proxy.txt中的格式支持http socks4 socks5 混合代理列表</br>
 注意http代理前缀不需要加代理类型标签</br>
-
-eg:
-x.x.x.x:xxxx 
-socks4://x.x.x.x:xxxx
-socks5://x.x.x.x:xxxx
+#代理池自己想办法获取
+eg:</br>
+x.x.x.x:xxxx </br>
+socks4://x.x.x.x:xxxx</br>
+socks5://x.x.x.x:xxxx</br>
