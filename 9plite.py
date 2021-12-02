@@ -36,26 +36,6 @@ def get_rdn_cookies():
     cookie = "CLIPSHARE="+str(clip)+"; language=cn_CN"
 
 
-def modify_hosts():
-    try:
-        fp=open("C:\\windows\\system32\\drivers\\etc\\hosts","r",encoding="utf-8")
-        line = fp.read()
-        if "www.91porn.com" in str(line):
-            fp.close()
-            return
-        else:
-            fp.close()
-            fp=open("C:\\windows\\system32\\drivers\\etc\\hosts","a+",encoding="utf-8")
-            fp.writelines("\n104.26.2.41 www.91porn.com\n")
-            fp.writelines("172.67.70.4 www.91porn.com\n")
-            fp.writelines("104.26.3.41 www.91porn.com\n")
-            fp.close()
-            os.system("ipconfig /flushdns")
-        return
-    except:
-        print("请右键管理员权限运行!")
-        os.system("pause")
-        sys.exit()
 
 def auto_switch_proxy():
     global proxies,pd,ip,port,proxy_mode
